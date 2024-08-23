@@ -110,11 +110,12 @@ footer p{
     font-size: 24px;
 }
 
-/* Responsiveness for the options. TODO: Try to actually integrate the thing. Don't be an idiot. */
+/* Responsiveness for the options. DONE: Try to actually integrate the thing. */
 @media (max-width: 800px) {
     #nav-options {
       scale: 80%;
       flex-wrap: nowrap;
+      margin-right: -8px;
     }
 }
 
