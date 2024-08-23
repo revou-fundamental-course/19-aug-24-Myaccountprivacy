@@ -1,53 +1,169 @@
 /* Written by Fadlan Aria P.N. */
 
+/* Fonts: 'Teachers' 'Teko' 'Noto Sans KR' 'Noto Sans JP' 'Lato' 'Bungee Tint' 'Open Sans' 'Exo 2' 'Bebas Neue' */
+/* Image Links: https://static.wikia.nocookie.net/projectwingman/images/6/69/Cascadiaflag.png/revision/latest?cb=20201212143215
+                https://static.wikia.nocookie.net/projectwingman/images/5/58/LOGO_Sicario.png/revision/latest?cb=20210304033924
+                https://www.lockheedmartin.com/content/dam/lockheed-martin/au/photo/2023/news/F35-LMA-800.jpg
+                https://live.staticflickr.com/65535/49166664617_8503db74c6_b.jpg
+                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxZxqU8V_DyUviwkaCHSA2Li8ofpKkLsy_A&s
+*/
+
 /* Nav bar stuff. */
-.header{
+nav{
     display: flex;
-    border: 2px solid black;
-    padding: 0;
-    margin-bottom: 0;
-    height: 10vh;
-    justify-content: flex-start;
-}
-
-/* The nav bar image. */
-.header img{
-    margin-top: 12px;
-    margin-left: 10px;
-}
-
-/* Well, the intro text, of course.*/
-.intro{
-    margin-left: 10px; 
-    margin-top: 4px;
-    font-family: 'Teko', sans-serif;
-    font-size: 50px;
-    color: black;
-}
-
-/* The option thingy. */
-.header-options{
-    display: flex;
-    justify-content: flex-end;
+    border: 1px solid black;
+    border-radius: 8px;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: black;
+    height: 66px;
+}
+.logo-und-icon{
+    background-image: url(https://static.wikia.nocookie.net/projectwingman/images/5/58/LOGO_Sicario.png/revision/latest?cb=20210304033924);
+    border-radius: 50px;
+    height: 48px;
+    width: 48px;
+    background-size: cover;
+    margin-left: 8px;
+}
+.nav-stuff{
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: 'Teachers', sans-serif;
+    color: white
+}
+#nav-options{
+    margin-right: 15px;
+    display: flex;
 }
 
-/* The option thingy's colors. */
-.header-options > div {
-    background-color: rgb(236, 222, 222);
-    margin: 2px;
-    padding: 20px;
-    font-size: 10px;
-    font-family: "Teachers", sans-serif;
+/* Main section banner. */
+.banner{
+    border-radius: 8px;
+    height: 350px;
+    background-image: url(https://static.wikia.nocookie.net/projectwingman/images/6/69/Cascadiaflag.png/revision/latest?cb=20201212143215);
+    background-size: cover;
+    background-position: center;
+}
+#wilkommen{
+    font-family: 'Exo 2', sans-serif;
+}
+#topsection p{
+    font-family: 'Lato', sans-serif;
+}
+#profiletext{
+    font-family: 'Exo 2', sans-serif;
+}
+.profile-items{
+    border: 1px transparent;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
+    align-items: center;
+}
+.profile-items h2{
+    font-family: 'Teachers', sans-serif;
+    font-size: 20px
+}
+.profile-img1{
+    background-image: url(https://www.lockheedmartin.com/content/dam/lockheed-martin/au/photo/2023/news/F35-LMA-800.jpg);
+    border: 1px transparent;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    background-position: center;
+}
+.profile-img2{
+    background-image: url(https://live.staticflickr.com/65535/49166664617_8503db74c6_b.jpg);
+    border: 1px transparent;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    background-position: center;
+}
+.profile-img3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxZxqU8V_DyUviwkaCHSA2Li8ofpKkLsy_A&s);
+    border: 1px transparent;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    background-position: center;
+}
+#profdetails{
+    display: flex;
+    justify-content: space-around;
 }
 
-/* Responsiveness for the options. TODO: Try to actually integrate the thing. */
+/* The footer. */
+footer p{
+    font-family: "Bebas Neue", sans-serif;
+    text-align: end;
+    font-size: 24px;
+}
+
+/* Responsiveness for the options. TODO: Try to actually integrate the thing. Don't be an idiot. */
 @media (max-width: 800px) {
-    .header-options {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+    #nav-options {
+      scale: 80%;
+      flex-wrap: nowrap;
     }
-  }
+}
+
+/*  kaze no koe hikari no tsubu madoromu kimi ni sosogu
+    wasurenai yasashii hohoemi kanashisa kakushita hitomi wo
+    negau koto tsurakutemo tachimukau yuuki kimi ni moratta dakara yukune
+    yume no naka (mezametara) mata aeruyo
+
+    tooi kioku mune ni hime utau
+
+    hakanaku tayutau sekai wo kimi no te de mamottakara
+    imawa tada tsubasa wo tatande yukkuri nemurinasai
+    eien no yasuragi ni tsutsumarete love through all eternity
+
+    yasashiku mimamoru watashi no kono te de nemurinasai
+    waratteta naiteta okotteta kimi no koto oboeteiru
+    wasurenai itsumademo kesshite until my life is exhausted
+
+    kousaten kikoetekita kimi ni yoku nita koe
+    furimuite sora wo aogi miru koboresouna namida koraete
+    ashita koso (itsunohika)
+    mou ichido kimi ni aeru to shinji hitori mayoi
+    ame no yoru (hareta asa) machitsuzukete
+
+    wasurenaiyo kakenuketa yoru wo
+
+    mabayuku kagayaku hitotoki minna to issho datta
+    kakegae no nai toki to shirazuni watashi wa sugoshite ita
+    imawa tada taisetsu ni shinobuyou I will embrace the feeling
+
+    kimi wa ne tashika ni ano toki watashi no soba ni ita
+    itsudatte itsudatte itsudatte sugu yoko de waratteita
+    nakushitemo torimodosu kimi wo I will never leave you
+
+    *pause*
+
+    hakanaku tayutau sekai wo kimi no te de mamottakara
+    imawa tada tsubasa wo tatande yukkuri nemurinasai
+    eien no yasuragi ni tsutsumarete love through all eternity
+
+    yasashiku mimamoru watashi no kono te de nemurinasai
+    waratteta naiteta okotteta kimi no koto oboeteiru
+    wasurenai itsumademo kesshite until my life is exhausted
+
+    mabayuku kagayaku hitotoki minna to issho datta
+    kakegae no nai toki to shirazuni watashi wa sugoshite ita
+    imawa tada taisetsu ni shinobuyou I will embrace the feeling
+
+    kimi wa ne tashika ni ano toki watashi no soba ni ita
+    itsudatte itsudatte itsudatte sugu yoko de waratteita
+    nakushitemo torimodosu kimi wo I will never leave you
+ */
