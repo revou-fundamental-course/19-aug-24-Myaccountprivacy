@@ -1,0 +1,53 @@
+/* Written by Fadlan Aria P.N. */
+
+/* Nav bar stuff. */
+.header{
+    display: flex;
+    border: 2px solid black;
+    padding: 0;
+    margin-bottom: 0;
+    height: 10vh;
+    justify-content: flex-start;
+}
+
+/* The nav bar image. */
+.header img{
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+/* Well, the intro text, of course.*/
+.intro{
+    margin-left: 10px; 
+    margin-top: 4px;
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    color: black;
+}
+
+/* The option thingy. */
+.header-options{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+/* The option thingy's colors. */
+.header-options > div {
+    background-color: rgb(236, 222, 222);
+    margin: 2px;
+    padding: 20px;
+    font-size: 10px;
+    font-family: "Teachers", sans-serif;
+}
+
+/* Responsiveness for the options. TODO: Try to actually integrate the thing. */
+@media (max-width: 800px) {
+    .header-options {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
