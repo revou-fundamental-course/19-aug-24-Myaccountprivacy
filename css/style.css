@@ -12,7 +12,7 @@
 nav{
     display: flex;
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 16px;
     align-items: center;
     justify-content: space-between;
     background-color: black;
@@ -41,23 +41,42 @@ nav{
     margin-right: 15px;
     display: flex;
 }
+#hm{
+    border-radius: 8px 0px 0px 8px;
+}
+#op{
+    border-radius: 0;
+}
+#po{
+    border-radius: 0;
+}
+#mu{
+    border-radius: 0px 8px 8px 0px;
+}
 
-/* Main section banner. */
+/* Main section. */
 .banner{
-    border-radius: 8px;
-    height: 350px;
+    /* border-radius: 16px; */
+    height: 500px;
     background-image: url(https://static.wikia.nocookie.net/projectwingman/images/6/69/Cascadiaflag.png/revision/latest?cb=20201212143215);
     background-size: cover;
     background-position: center;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 #wilkommen{
     font-family: 'Exo 2', sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 #topsection p{
     font-family: 'Lato', sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 #profiletext{
     font-family: 'Exo 2', sans-serif;
+    text-align: center;
 }
 .profile-items{
     border: 1px transparent;
@@ -101,6 +120,7 @@ nav{
 #profdetails{
     display: flex;
     justify-content: space-around;
+    margin: auto;
 }
 
 /* The footer. */
@@ -110,12 +130,76 @@ footer p{
     font-size: 24px;
 }
 
+/* Form goes here. */
+#form-container{
+    width: 50%;
+    margin: auto;
+    margin-left: 25px;
+    display: flex;
+}
+#the-form{
+    width:100%;
+}
+.rows{
+    width:100%;
+    display:block;  
+}
+.column{
+    width:100%;
+    display:inline-block;      
+}
+.labels{  
+    width:30%;
+    float: left;
+    font-family: 'Lato', sans-serif;
+}
+.inputs{
+    width: 60%;
+    float: right;
+    padding-inline-start: 0px;
+    border-radius: 4px;
+}
+#message{
+    height: 85px;
+}
+#submit{
+    width: 100%;
+    font-family: 'Exo 2';
+    height: 30px;
+}
+
 /* Responsiveness for the options. DONE: Try to actually integrate the thing. */
 @media (max-width: 800px) {
     #nav-options {
       scale: 80%;
       flex-wrap: nowrap;
       margin-right: -8px;
+    }
+}
+@media (max-width: 800px) {
+    .labels {
+      width: 33%;
+      font-size: 14px;
+    }
+}
+@media (max-width: 800px) {
+    #form-container {
+      width: 80%;
+    }
+}
+@media (max-width: 800px) {
+    .inputs {
+      width: 55%;
+    }
+}
+@media (max-width: 800px) {
+    #message {
+      height: 100px;
+    }
+}
+@media (max-width: 800px) {
+    .profile-items {
+      scale: 80%;
     }
 }
 
@@ -141,24 +225,6 @@ footer p{
     ame no yoru (hareta asa) machitsuzukete
 
     wasurenaiyo kakenuketa yoru wo
-
-    mabayuku kagayaku hitotoki minna to issho datta
-    kakegae no nai toki to shirazuni watashi wa sugoshite ita
-    imawa tada taisetsu ni shinobuyou I will embrace the feeling
-
-    kimi wa ne tashika ni ano toki watashi no soba ni ita
-    itsudatte itsudatte itsudatte sugu yoko de waratteita
-    nakushitemo torimodosu kimi wo I will never leave you
-
-    *pause*
-
-    hakanaku tayutau sekai wo kimi no te de mamottakara
-    imawa tada tsubasa wo tatande yukkuri nemurinasai
-    eien no yasuragi ni tsutsumarete love through all eternity
-
-    yasashiku mimamoru watashi no kono te de nemurinasai
-    waratteta naiteta okotteta kimi no koto oboeteiru
-    wasurenai itsumademo kesshite until my life is exhausted
 
     mabayuku kagayaku hitotoki minna to issho datta
     kakegae no nai toki to shirazuni watashi wa sugoshite ita

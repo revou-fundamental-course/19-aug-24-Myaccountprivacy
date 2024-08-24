@@ -26,10 +26,10 @@
             </header>
             <!-- The real navigation stuff. -->
             <section id="nav-options">
-                <a href="#topsection" class="nav-stuff">Home</a>
-                <a href="#profile" class="nav-stuff">Our Profile</a>
-                <a href="#" class="nav-stuff">Portfolio</a>
-                <a href="#" class="nav-stuff">Message Us</a>
+                <a href="#topsection" class="nav-stuff" id="hm">Home</a>
+                <a href="#profile" class="nav-stuff" id="op">Our Services</a>
+                <a href="#" class="nav-stuff" id="po">Portfolio</a>
+                <a href="#form-container" class="nav-stuff" id="mu">Message Us</a>
             </section>
         </nav>
 
@@ -53,7 +53,7 @@
             <!-- It's a profile. -->
             <section id="profile">
                 <header id="profiletext">
-                    <h1>Our Profile</h1>
+                    <h1>Our Services</h1>
                 </header>
             </section>
             
@@ -61,21 +61,47 @@
             <section id="profdetails">
                 <div class="profile-items">
                     <div class="profile-img1"></div>
-                    <h2>Software Engineer</h2>
+                    <h2>Avionics Engineering</h2>
                 </div>
                 <div class="profile-items">
                     <div class="profile-img2"></div>
-                    <h2>Professional Hitman</h2>
+                    <h2>Manufacturing</h2>
                 </div>
                 <div class="profile-items">
                     <div class="profile-img3"></div>
-                    <h2>Maintenance Crew</h2>
+                    <h2>Aircraft Maintenance</h2>
                 </div>
             </section>
 
+            <hr />
+
             <!-- TODO: Complete the damn form. -->
-            <section>
-                <form></form>
+            <section id="form-container">
+                <form id="the-form">
+                    <div class="rows">
+                        <div class="column">
+                            <label class="labels">                      
+                              Name
+                            </label>
+                            <input class="inputs" type="text"/>
+                        </div>
+                        <div class="column">
+                            <label class="labels">                     
+                              Date of Birth
+                            </label>
+                            <input class="inputs" type="date"/>
+                        </div>
+                        <div class="column">
+                            <label class="labels">                     
+                              Message
+                            </label>
+                            <input class="inputs" type="text" id="message"/>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" id="submit">
+                        </div>
+                    </div>
+                </form>
                 <div></div>
             </section>
         </main>
