@@ -20,7 +20,7 @@ nav{
     height: 66px;
 }
 .logo-und-icon{
-    background-image: url("assets/LOGO_Sicario.webp");
+    background-image: url('LOGO_Sicario.webp');
     border-radius: 50px;
     height: 48px;
     width: 48px;
@@ -59,7 +59,7 @@ nav{
 .banner{
     /* border-radius: 16px; */
     height: 500px;
-    background-image: url("assets/Cascadiaflag.webp");
+    background-image: url('Cascadiaflag.webp');
     background-size: cover;
     background-position: center;
     margin-left: 25px;
@@ -97,7 +97,7 @@ nav{
     font-size: 20px;
 }
 .profile-img1{
-    background-image: url(https://www.lockheedmartin.com/content/dam/lockheed-martin/au/photo/2023/news/F35-LMA-800.jpg);
+    background-image: url('F35-LMA-800.jpg');
     border: 1px transparent;
     height: 100px;
     background-size: cover;
@@ -106,7 +106,7 @@ nav{
     background-position: center;
 }
 .profile-img2{
-    background-image: url(https://live.staticflickr.com/65535/49166664617_8503db74c6_b.jpg);
+    background-image: url('49166664617_8503db74c6_b.jpg');
     border: 1px transparent;
     height: 100px;
     background-size: cover;
@@ -115,7 +115,7 @@ nav{
     background-position: center;
 }
 .profile-img3{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxZxqU8V_DyUviwkaCHSA2Li8ofpKkLsy_A&s);
+    background-image: url('images.jpeg');
     border: 1px transparent;
     height: 100px;
     background-size: cover;
