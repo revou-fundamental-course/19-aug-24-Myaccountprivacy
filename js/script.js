@@ -41,3 +41,5 @@ function setSenderUI(username, birthDate, gender, message){
 // document.getElementById("name").addEventListener("onKeyup", function(name){
 //    console.log(name);
 // })
+
+// Wait, I deleted that one! Oh well...
