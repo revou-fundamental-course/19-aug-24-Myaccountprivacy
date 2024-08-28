@@ -20,7 +20,7 @@ nav{
     height: 66px;
 }
 .logo-und-icon{
-    background-image: url('LOGO_Sicario.webp');
+    background-image: url('LOGO_Sicario.png');
     border-radius: 50px;
     height: 48px;
     width: 48px;
@@ -59,7 +59,7 @@ nav{
 .banner{
     /* border-radius: 16px; */
     height: 500px;
-    background-image: url('Cascadiaflag.webp');
+    background-image: url('Cascadiaflag.png');
     background-size: cover;
     background-position: center;
     margin-left: 25px;
