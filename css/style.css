@@ -89,7 +89,7 @@ nav{
 }
 .profile-items h2{
     font-family: 'Teachers', sans-serif;
-    font-size: 20px
+    font-size: 20px;
 }
 .profile-img1{
     background-image: url(https://www.lockheedmartin.com/content/dam/lockheed-martin/au/photo/2023/news/F35-LMA-800.jpg);
@@ -223,3 +223,8 @@ footer p{
       width: 43%;
     }
 }
+
+/*  kimi wa ne tashika ni ano toki watashi no soba ni ita
+    itsudatte, itsudatte, itsudatte sugu yoko de waratteita
+    nakushitemo torimodosu kimi wo I will never leave you
+*/
