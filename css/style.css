@@ -204,6 +204,13 @@ footer p{
       margin-right: -8px;
     }
 }
+@media (max-width: 400px) {
+    #nav-options {
+      scale: 60%;
+      flex-wrap: nowrap;
+      margin-right: -8px;
+    }
+}
 @media (max-width: 800px) {
     .labels {
       width: 33%;
