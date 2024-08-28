@@ -17,9 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Tint&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teachers:ital,wght@0,400..800;1,400..800&family=Teko:wght@300..700&display=swap" rel="stylesheet">
 
-    <!-- Script goes here. -->
-    <script src="js/script.js"></script>
-
     <!-- The body, obviously enough. -->
     <body>
         <!-- Header, top nav? Oh, a nav bar! -->
@@ -44,10 +41,11 @@
             <article id="topsection">
                 <!-- Wilkommen. -->
                 <header>
-                    <h1 id="wilkommen">Welcome, <span id="username">user,</span> to our website.</h1>
+                    <h1 id="wilkommen">Welcome to our website, <span id="name">user</span>.</h1>
                 </header>
                 <!-- Subsection? That what it's called? -->
                 <p>Nothing of note.</p>
+                <!-- <button id="namechange">Change Name</button> -->
                 <!-- Banner goes here. -->
                 <div class="banner"></div>
             </article>
@@ -82,19 +80,19 @@
             <!-- DONE: Complete the form. 
                  TODO: Give this one the JavaScript treatment. -->
             <section id="form-container">
-                <form id="the-form">
+                <form id="the-form" name="the-form" onsubmit="return validateForm()">
                     <div class="rows">
                         <div class="column">
                             <label class="labels">                      
                               Name
                             </label>
-                            <input class="inputs" type="text" id="name"/>
+                            <input required class="inputs" type="text" id="name-input" name="fullname"/>
                         </div>
                         <div class="column">
                             <label class="labels">                     
                               Date of Birth
                             </label>
-                            <input class="inputs" type="date" id="birth-date"/>
+                            <input class="inputs" type="date" id="birth-date" name="birthdate"/>
                         </div>
                         <div class="column" id="gender-select">
                             <label class="labels" id="gender-label">                     
@@ -109,15 +107,23 @@
                             <label class="labels">                     
                               Message
                             </label>
-                            <input class="inputs" type="text" id="message"/>
+                            <input class="inputs" type="text" id="message" name="message-input" placeholder="Type here..."/>
                         </div>
                         <div>
                             <input type="submit" value="Submit" id="submit">
                         </div>
+                        <p id="errorname"></p>
                     </div>
                 </form>
                 <div></div>
             </section>
+            <!-- KEPT FOR REDUNDANCY(?) -->
+            <!-- <section id="show-inputs">
+                <p id="name-input">Name</p>
+                <p id="birth-date">Date of Birth</p>
+                <p id="gen-select1">Gender</p>
+                <p id="message">Message</p>
+            </section> -->
         </main>
 
         <hr />
@@ -126,9 +132,18 @@
         <footer>
             <p>Made by Fadlan Aria P.N.</p>
         </footer>
+        
+        <!-- Script goes here. -->
+        <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </body>
     <!-- This ends. Now. -->
  </html>
+
+ <?php
+ if (isset($_POST['fullname']) $$ $_POST['birthdate'])){
+    echo $_POST[birthdate] . "<br>"
+ }
 
  <!--   The gentle spring sunlight warms your body. 
         You feel sleepy...
