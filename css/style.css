@@ -20,7 +20,7 @@ nav{
     height: 66px;
 }
 .logo-und-icon{
-    background-image: url("assets/LOGO_Sicario.webp");
+    background-image: url(./assets/LOGO_Sicario.webp);
     border-radius: 50px;
     height: 48px;
     width: 48px;
